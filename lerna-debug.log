@@ -1,6 +1,80 @@
-49 error Error: Command failed: git push --follow-tags --no-verify origin master
-49 error remote: Permission to Hy-Vee/lerna-yarn-workspaces-monorepo.git denied to michaelgichia.
-49 error fatal: unable to access 'https://github.com/Hy-Vee/lerna-yarn-workspaces-monorepo.git/': The requested URL returned error: 403
-49 error
-49 error     at makeError (/Users/gichia/workspace/lerna-yarn-workspaces-monorepo/node_modules/execa/index.js:174:9)
-49 error     at /Users/gichia/workspace/lerna-yarn-workspaces-monorepo/node_modules/execa/index.js:278:16
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.16.4',
+0 silly argv   '$0': '/usr/local/bin/lerna'
+0 silly argv }
+1 notice cli v3.16.4
+2 verbose rootPath /Users/gichia/workspace/lerna-yarn-workspaces-monorepo
+3 info versioning independent
+4 verbose session 1276ebbd47a5ee2d
+5 verbose user-agent lerna/3.16.4/node@v12.6.0+x64 (darwin)
+6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.16.4' }
+7 verbose rootPath /Users/gichia/workspace/lerna-yarn-workspaces-monorepo
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly currentBranch
+11 verbose currentBranch master
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "@gichia/button@0.0.5-1-g0bfe1b7" => {"lastTagName":"@gichia/button@0.0.5","lastVersion":"0.0.5","refCount":"1","sha":"0bfe1b7","isDirty":false}
+18 info Looking for changed packages since @gichia/button@0.0.5
+19 silly checking diff packages/button
+20 silly found diff in packages/button/package.json
+20 silly found diff in packages/button/src/index.js
+21 verbose filtered diff [ 'packages/button/package.json', 'packages/button/src/index.js' ]
+22 silly checking diff packages/theme
+23 silly found diff in packages/theme/package.json
+24 verbose filtered diff [ 'packages/theme/package.json' ]
+25 verbose updated @tweleza/button
+26 verbose updated @tweleza/theme
+27 verbose git-describe undefined => "@gichia/button@0.0.5-1-g0bfe1b7"
+28 silly git-describe parsed => {"lastTagName":"@gichia/button@0.0.5","lastVersion":"0.0.5","refCount":"1","sha":"0bfe1b7","isDirty":false}
+29 info execute Skipping releases
+30 silly lifecycle No script for "preversion" in "root", continuing
+31 silly lifecycle No script for "preversion" in "@tweleza/theme", continuing
+32 silly lifecycle No script for "version" in "@tweleza/theme", continuing
+33 silly lifecycle No script for "preversion" in "@tweleza/button", continuing
+34 silly lifecycle No script for "version" in "@tweleza/button", continuing
+35 silly lifecycle No script for "version" in "root", continuing
+36 silly gitAdd [
+36 silly gitAdd   '/Users/gichia/workspace/lerna-yarn-workspaces-monorepo/packages/theme/package.json',
+36 silly gitAdd   '/Users/gichia/workspace/lerna-yarn-workspaces-monorepo/packages/button/package.json'
+36 silly gitAdd ]
+37 silly gitCommit Publish
+37 silly gitCommit
+37 silly gitCommit  - @tweleza/button@0.0.6
+37 silly gitCommit  - @tweleza/theme@0.0.4
+38 verbose git [
+38 verbose git   'commit',
+38 verbose git   '-F',
+38 verbose git   '/private/var/folders/d5/s9gtq34144ngf0dq0w_9tt080000gn/T/ab0fb3df-b95b-48e4-a6df-06c1e3678a9e/lerna-commit.txt'
+38 verbose git ]
+39 silly gitTag @tweleza/button@0.0.6
+40 verbose git [ 'tag', '@tweleza/button@0.0.6', '-m', '@tweleza/button@0.0.6' ]
+41 silly gitTag @tweleza/theme@0.0.4
+42 verbose git [ 'tag', '@tweleza/theme@0.0.4', '-m', '@tweleza/theme@0.0.4' ]
+43 silly lifecycle No script for "postversion" in "@tweleza/button", continuing
+44 silly lifecycle No script for "postversion" in "@tweleza/theme", continuing
+45 silly lifecycle No script for "postversion" in "root", continuing
+46 info git Pushing tags...
+47 silly gitPush origin master
+48 info publish Publishing packages to npm...
+49 info Verifying npm credentials
+50 verbose Retrieving npm user profile
+51 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 575ms
+52 silly npm profile get received {"name":"tweleza","created":"2019-09-18T06:56:46.851Z","updated":"2019-09-18T06:56:46.851Z","fullname":"Michael"}
+53 silly get npm username received {"username":"tweleza","name":"tweleza","created":"2019-09-18T06:56:46.851Z","updated":"2019-09-18T06:56:46.851Z","fullname":"Michael"}
+54 silly verifyNpmPackageAccess
+55 http fetch GET 200 https://registry.npmjs.org/-/org/tweleza/package?format=cli 713ms
+56 warn The logged-in user does not have any previously-published packages, skipping permission checks...
+57 info Checking two-factor auth mode
+58 verbose Retrieving npm user profile
+59 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1284ms
+60 silly npm profile get received {"name":"tweleza","created":"2019-09-18T06:56:46.851Z","updated":"2019-09-18T06:56:46.851Z","fullname":"Michael"}
+61 silly 2FA undefined
+62 error TypeError: Cannot read property 'pending' of undefined
+62 error     at success (/Users/gichia/workspace/lerna-yarn-workspaces-monorepo/node_modules/@lerna/publish/lib/get-two-factor-auth-required.js:22:20)
