@@ -1,10 +1,10 @@
 {
-    "name": "@gichia/button",
+    "name": "@tweleza/button",
     "version": "0.0.5",
     "main": "lib/index.js",
     "module": "src/index.js",
     "dependencies": {
-        "@gichia/theme": "0.0.3",
+        "@tweleza/theme": "0.0.3",
         "prop-types": "15.7.2",
         "react": "16.9.0",
         "react-dom": "16.9.0",
@@ -15,5 +15,5 @@
         "react-dom": "^15.0.0 || ^16.0.0",
         "styled-components": "^4.0.0"
     },
-    "gitHead": "96036df64b061391e2ef9ea619b8d1850f9e0650"
+    "gitHead": "2b4e0a59a3891901839aa601eb61cefb81cd9489"
 }

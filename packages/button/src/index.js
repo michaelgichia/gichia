@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import {spacing} from '@gichia/theme';
+import {spacing} from '@tweleza/theme';
 import PropTypes from 'prop-types';
 
 const APPEARANCES = {
