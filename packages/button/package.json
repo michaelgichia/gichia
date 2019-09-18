@@ -1,14 +1,14 @@
 {
     "name": "@gichia/button",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "main": "lib/index.js",
     "module": "src/index.js",
     "dependencies": {
+        "@gichia/theme": "0.0.3",
         "prop-types": "15.7.2",
         "react": "16.9.0",
         "react-dom": "16.9.0",
-        "styled-components": "4.3.2",
-        "@gichia/theme": "0.0.3"
+        "styled-components": "4.3.2"
     },
     "peerDependencies": {
         "react": "^15.0.0 || ^16.0.0",
