@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 const APPEARANCES = {
     DANGER: 'danger',
     PRIMARY: 'primary',
-    SECONDARY: 'secondary'
+    SECONDARY: 'secondary',
+    SUCCESS: 'sucess'
 };
 
 const Button = styled.button`
@@ -60,6 +61,20 @@ const Button = styled.button`
                 color: yellow;
                 border: 1px solid #000;
                 background-color: #000;
+            }
+        `}
+
+    ${(props) =>
+        props.variant === APPEARANCES.SUCCESS &&
+        css`
+            color: white;
+            background-color: greenyellow;
+            border: 1px solid greenyellow;
+
+            :hover {
+                color: greenyellow;
+                border: 1px solid white;
+                background-color: white;
             }
         `}
 `;
