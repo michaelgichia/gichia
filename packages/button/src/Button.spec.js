@@ -16,4 +16,10 @@ describe('Button', () => {
 
         expect(tree).toMatchSnapshot();
     });
+
+    test('danger', () => {
+        const tree = renderer.create(<Button variant="danger">{'Danger'}</Button>).toJSON();
+
+        expect(tree).toMatchSnapshot();
+    });
 });

@@ -1,8 +1,9 @@
 import styled, {css} from 'styled-components';
-import {spacing} from 'theme';
+import {spacing} from '@gichia/theme';
 import PropTypes from 'prop-types';
 
 const APPEARANCES = {
+    DANGER: 'danger',
     PRIMARY: 'primary',
     SECONDARY: 'secondary'
 };
@@ -43,6 +44,20 @@ const Button = styled.button`
 
             :hover {
                 color: #fff;
+                border: 1px solid #000;
+                background-color: #000;
+            }
+        `}
+
+    ${(props) =>
+        props.variant === APPEARANCES.DANGER &&
+        css`
+            color: #000;
+            background-color: yellow;
+            border: 1px solid yellow;
+
+            :hover {
+                color: yellow;
                 border: 1px solid #000;
                 background-color: #000;
             }

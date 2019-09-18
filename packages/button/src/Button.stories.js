@@ -10,3 +10,5 @@ export default {
 export const primary = () => <Button>{'Button'}</Button>;
 
 export const secondary = () => <Button variant="secondary">{'Button'}</Button>;
+
+export const danger = () => <Button variant="danger">{'Button'}</Button>;
