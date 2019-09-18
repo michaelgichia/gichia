@@ -1,8 +1,6 @@
-# Monorepo with Lerna & Yarn Workspaces
+# Tweleza
 
-> A Monorepo with multiple packages and a shared build, test, and release process.
-
-![image](https://user-images.githubusercontent.com/9113740/62553219-8e7ede00-b834-11e9-8abc-bbd7bf51e46b.png)
+## Technologies
 
 -   🐉 [Lerna](https://lernajs.io/)  - The Monorepo manager
 -   📦 [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/)  -  Sane multi-package management
@@ -26,9 +24,7 @@
 -   `lerna changed` - Show which packages have changed.
 -   `lerna diff` - Show specifically what files have cause the packages to change.
 
-## Linking
-
-When linking inside of the Monorepo, everything works as expected. If you are trying to consume packages from this Monorepo _in a different application_ locally, using `npm link` or `yarn link` [does not work as expected](https://github.com/yarnpkg/yarn/issues/5538). However, we have a workaround for the time being.
+## Commands
 
 1. Run `yarn build`
 1. Run `yarn dev`
@@ -36,10 +32,7 @@ When linking inside of the Monorepo, everything works as expected. If you are tr
 1. Run `rm -rf node_modules && yarn` in the consumer
 1. 🎉
 
-## Contributing
+## Packages
 
-All formatting and linting should be taken care of for you using [stylelint](https://github.com/stylelint/stylelint), [ESLint](https://eslint.org/), and [Prettier](https://prettier.io/). You should also consider installing an extension for CSS syntax highlighting.
-
--   [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
--   [webstorm-styled-components](https://github.com/styled-components/webstorm-styled-components)
--   [Other IDEs](https://www.styled-components.com/docs/tooling#syntax-highlighting)
+1. npm i @tweleza/button
+2. npm i @tweleza/theme
