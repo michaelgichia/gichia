@@ -1,6 +1,6 @@
 {
     "name": "@tweleza/button",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "main": "lib/index.js",
     "module": "src/index.js",
     "dependencies": {
@@ -8,9 +8,9 @@
         "styled-components": "4.3.2"
     },
     "peerDependencies": {
+        "prop-types": "15.7.2",
         "react": "^15.0.0 || ^16.0.0",
-        "react-dom": "^15.0.0 || ^16.0.0",
-        "prop-types": "15.7.2"
+        "react-dom": "^15.0.0 || ^16.0.0"
     },
     "gitHead": "2b4e0a59a3891901839aa601eb61cefb81cd9489"
 }
